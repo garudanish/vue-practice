@@ -1,27 +1,19 @@
 <template>
-  <div>
-    <AppHeader v-on:renew="renewStr" v-bind:propsdata="str" />
-  </div>
+  <form action="">
+    <div>
+      <label for="username">id: </label>
+      <input id="username" type="text" />
+    </div>
+    <div>
+      <label for="password">pw: </label>
+      <input id="password" type="password" />
+    </div>
+    <button>LOG IN</button>
+  </form>
 </template>
 
 <script>
-import AppHeader from "./components/AppHeader.vue";
-
-export default {
-  data: function () {
-    return {
-      str: "Header",
-    };
-  },
-  components: {
-    AppHeader,
-  },
-  methods: {
-    renewStr: function () {
-      this.str = "HEADER CHANGED!";
-    },
-  },
-};
+export default {};
 </script>
 
 <style></style>
